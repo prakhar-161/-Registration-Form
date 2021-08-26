@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #45B649, #DCE35B); 
+    /* background: #1A1A1D; */
+    /* background: linear-gradient(to right, #eea849, #f46b45); */
+}
+
+.register {
+    position: relative;
+    margin: 100px auto;
+    width: 60%;
+    height: 65vh;
+   background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-left: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    grid-template-columns: 50% 1fr;
+}
+
+.register h1 {
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: rgb(53, 49, 49);
+    text-align: center;
+    background: rgba(114, 113, 106, 0.05);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-left: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+      margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: fixed;
+    grid-column: 2/-1;
+    width: 100%;
+}
+
+img{
+    position: relative;
+    grid-column: 1/2;
+    width: 100%;
+    height:65vh;
+    opacity: 0.9;
+}
+
+.login{
+    position: relative;
+    margin: 100px auto;
+    width: 60%;
+    height: 65vh;
+   background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-left: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    grid-template-columns: 50% 1fr;
+}
+
+.login h1{
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: rgb(53, 49, 49);
+    text-align: center;
+    background: rgba(114, 113, 106, 0.05);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-left: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+      margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: fixed;
+    grid-column: 2/-1;
+    width: 100%;
+}
+
+
+.register-form{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-left: 40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+
+.register-form div{
+    margin-left: 15%;
+}
+
+.register-form input{
+    width: 80%;
+    padding: 6px;
+    /* margin: 0px 20px 13px 20px; */
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.801);
+    background: none;
+}
+
+.register-form input::placeholder{
+    color:rgb(241, 255, 241, 0.7);
+}
+.register-form label{
+    color: rgba(46, 28, 24, 0.801);
+    margin-bottom: 4px;
+    text-shadow: 0.3px 0.3px 0.1px  rgb(116, 78, 78);
+    font-size: small;
+}
+
+button.btn-register{
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(163, 206, 159);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(37, 22, 22);
+    width: 80%;
+    /* margin-left: 35%; */
+}
+    
+/* login form */
+.login-form{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-left: 40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-form div{
+    margin-left: 15%;
+    margin-top: 6px;
+}
+
+.login-form input{
+    width: 80%;
+    padding: 6px;
+    /* margin: 0px 20px 13px 20px; */
+    margin-bottom: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.801);
+    background: none;
+}
+
+.login-form label{
+    color: rgba(46, 28, 24, 0.801);
+    margin-bottom: 4px;
+    text-shadow: 0.3px 0.3px 0.1px  rgb(116, 78, 78);
+    font-size: small;
+}
+
+.login-form input::placeholder{
+    color:rgba(241, 255, 241, 0.7);
+}
+
+.login-form button{
+    padding: 2px;
+    font-size: 1.3rem;
+    border: none;
+    background-color:rgb(163, 206, 159);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(37, 22, 22);
+    width: 80%;
+}
+
+.wrapper{
+    /* border: 1px solid black; */
+    width: 900px;
+    margin: 10% auto;
+}
+
+.wrapper h1{
+    font-size: 4.5rem;
+    /* text-align: center; */
+    color: rgb(206, 27, 102);
+
+    animation: type 5s steps(25);
+        
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid rgb(34, 34, 134);
+    width: 25ch;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 25ch;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <script src="public/js/register.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="register">
+        <img src="css/books.jpg" alt="code in laptop">
+        <h1>Register</h1>
+        
+        <form action="/register" method="POST" class="register-form">
+            <div>
+                <label for="name">Name </label><br>
+                <input type="text" class="fill-ins" id="name" name="name" placeholder="Enter name">
+            </div>
+            <div>
+                <label for="phone">Contact Number </label><br>
+                <input type="number" class="fill-ins" minlength="10" maxlength="10" name="phone" id="phone" placeholder="Enter contact number">
+            </div>
+            <div>
+                <label for="email">Email </label><br>
+                <input type="email" class="fill-ins" id="email" name="email" placeholder="Enter email">
+            </div>
+            <div>
+                <label for="password">Password </label><br>
+                <input type="password" class="fill-ins" id="password" name="password" placeholder="Enter password">
+            </div>
+            <div><button type="submit" class="btn-register" value="register">Submit</button></div>
+        </form>
+    </div>
+
+
+
+    <script>
+        let btnRegister = document.querySelector('.btn-register');
+
+        btnRegister.addEventListener('click',() => {
+            console.log('click');
+            alert('You have been successfully registered.');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
